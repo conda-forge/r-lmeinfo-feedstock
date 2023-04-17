@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lmeInfo_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lmeInfo/lmeInfo_{{ version }}.tar.gz
-  sha256: 9d94cbf678a226877c83d0e68ad273c6eb181dd27f46a5c06492ec90be8e6641
+  sha256: 6d7fb0444eb542275e5a04d72fd49f52e22b9afc154012e9b3d71eb9d2725887
 
 build:
   merge_build_host: true  # [win]
