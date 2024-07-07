@@ -1,6 +1,5 @@
 {% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-lmeinfo
@@ -13,8 +12,7 @@ source:
   sha256: 6d7fb0444eb542275e5a04d72fd49f52e22b9afc154012e9b3d71eb9d2725887
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   noarch: generic
   rpaths:
     - lib/R/lib/
