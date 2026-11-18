@@ -1,4 +1,4 @@
-{% set version = "0.3.3" %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lmeInfo_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lmeInfo/lmeInfo_{{ version }}.tar.gz
-  sha256: 835282203d3f3cb4e29e3d77441273ce7d42ca1fd7b20a1d1ad903d9dd69e2bd
+  sha256: 3bc616b56c7a8ba0c3c119de44ca0c617cb45ddb53c74ebb76f91dca92822dc3
 
 build:
   number: 0
